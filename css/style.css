@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* Start Header Section  */
+header{
+    height: 95vh;
+    /* background-image:url('./../assets/img/banner/banner8.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+
+    transition: all 2s linear;
+}
+
+/* Start Nav Bar  */
+.navbar{
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.5));
+}
+
+.nav-link{
+    font-size: 16px;
+    color: #fff !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdowns{
+    position: relative;
+}
+
+.dropbtn:hover{
+    background: none !important;
+}
+
+.dropdown-contents{
+    width: 230px;
+    background-color: #f6f6f6;
+
+    position: absolute;
+
+    z-index: 10;
+
+    display: none;
+}
+
+.dropdown-contents .search{
+    width: 100%;
+    background-image: url('./../assets/img/icon/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px 10px 40px;
+}
+
+.dropdown-contents .search:focus{
+    outline: none;
+}
+
+.dropdown-contents a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdowns a:hover{
+    background-color: #ddd;
+}
+
+.dropdown-contents.show{
+    display: block;
+}
+/* End Nav Bar  */
+
+/* Start Banner */
+.banners{
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.bannerheaders{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+    box-shadow: 10px 10px 100px 20px #000;
+    border: 2px dashed #fff;
+    padding: 20px;
+
+    animation-name: bnani;
+    animation-duration: 2s;
+}
+
+.bannerparagraphs{
+    animation-name: bnani;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bnani{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* End Banner */
+/* End Header Section  */
