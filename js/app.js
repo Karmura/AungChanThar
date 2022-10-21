@@ -1,3 +1,19 @@
+// Start Jquery Area
+
+$(document).ready(function(){
+    
+    // Start Room Section
+    $('.roompopup').magnificPopup({
+        type: 'image'
+        // other options
+      });
+
+    // End Room Section
+});
+
+// End Jquery Area
+
+
 // Start Header
 
 // start nav bar 

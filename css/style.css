@@ -92,6 +92,7 @@ header{
     color: #fff;
     font-weight: 900;
     text-align: center;
+    cursor: default;
 
     position: absolute;
     left: 50%;
@@ -111,6 +112,7 @@ header{
 }
 
 .bannerparagraphs{
+    min-width: 600px;
     animation-name: bnani;
     animation-duration: 2s;
     animation-delay: .5s;
@@ -129,3 +131,65 @@ header{
 }
 /* End Banner */
 /* End Header Section  */
+
+/* Start Booking Section */
+.search-rooms{
+    width: 80%;
+    background: linear-gradient(to left,skyblue,steelblue);
+
+    padding: 30px 0;
+    margin-top: -60px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.search-rooms .form-control{
+    max-width: 20%;
+    display: inline;
+    margin: 10px 5px;
+    border-radius: 0;
+    border: none;
+}
+.search-rooms .form-control:focus{
+    box-shadow: none;
+}
+
+.search-rooms input[type=text]{
+    width: 200px;
+    transition: width 0.5s ease-in-out;
+}
+.search-rooms input[type=text]:focus{
+    width: 100%;
+}
+
+/* End Booking Section */
+
+/* Start Rooms Section */
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+.colums{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 5px;
+}
+.colums img{
+    width: 100%;
+    margin: 5px;
+
+    transition: all 0.5s;
+}
+.colums img:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .colums{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* End Rooms Section */
