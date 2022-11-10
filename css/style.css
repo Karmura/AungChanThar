@@ -51,6 +51,8 @@ header{
     background-color: #f6f6f6;
 
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     z-index: 10;
 
@@ -249,6 +251,55 @@ header{
     color: purple;
     border:  2px solid purple;
 }
-
+.iconboxs .dropbtn{
+    /* border: 1px solid purple; */
+    background-color: purple;
+    color: #fff;
+}
+.iconboxs .dropbtn:hover{
+    border: 1px solid purple;
+    background-color: none;
+    color: purple;
+}
 
 /* End Our Service Section */
+
+
+/* Start Testimonial Section */
+.testimonial-container{
+    position: relative;
+}
+.fa-quotes{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+
+    position: absolute;
+    top: 40px;
+}
+.fa-quote-right{
+    right: 0;
+}
+.fa-quote-left{
+    left: 0;
+}
+.testimonial{
+    line-height: 30px;
+}
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    background-color: tomato;
+    transform-origin: left;
+
+    animation-name: myincrement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes myincrement {
+    0%{
+        transform: scaleX(0);
+    }
+}
+
+/* End Testimonial Section */
