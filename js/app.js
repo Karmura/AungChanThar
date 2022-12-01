@@ -153,4 +153,63 @@ setInterval(updatetestestimonia,10000);
 
 // End Testimonial Section
 
+// Start Property
+
+filterby('all');
+
+function filterby(keyword){
+    
+    // console.log(keyword);
+
+    var getfilters = document.getElementsByClassName('filters');
+
+    // console.log(getfilters);
+
+    if(keyword === 'all'){
+        
+    }
+
+    for(var x = 0; x < getfilters.length; x++){
+        // console.log(getfilters[x]);
+
+        // console.log(getfilters[x].className.indexOf(keyword) > -1);
+
+        removeShowClass(getfilters[x],'show');
+
+        if(getfilters[x].className.indexOf(keyword) > -1){
+
+            addShowClass(getfilters[x],'show');
+        }
+    }
+
+}
+
+function addShowClass(ele,opt){
+    // console.log(ele);
+    var getfilters = ele.className.split(" "); // split will get with array ' ' mean there is two class
+    // console.log(getfilters);
+    
+    var getopt = opt.split(" ");
+    // console.log(getopt);
+    // console.log(getopt.length);
+
+    for(var y = 0; y < getopt.length; y++){
+        // console.log(getfilters[y]);
+
+        // console.log(getfilters.indexOf(getopt[y]) === -1);
+
+        if(getfilters.indexOf(getopt[y]) === -1){
+            // ele.classList.add(getopt[y]);
+            ele.className += " "+getopt[y];
+        }
+    }
+}
+function removeShowClass(ele,opt){
+    // console.log(ele,opt);
+}
+
+// End Property
+
 // 3TM
+
+// 1RM
